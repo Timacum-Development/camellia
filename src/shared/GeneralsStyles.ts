@@ -74,4 +74,14 @@ export default createGlobalStyle`
 		margin: 0;
 		text-align: left;
 	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	button {
+		cursor: pointer;
+	}
 `;

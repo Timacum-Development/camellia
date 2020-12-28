@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Hero } from "./style";
 
 const Homepage = () => {
-	return <div>camellia</div>;
+  return (
+    <React.Fragment>
+      <Hero></Hero>
+    </React.Fragment>
+  );
 };
 
 export default Homepage;

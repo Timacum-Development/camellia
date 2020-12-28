@@ -6,5 +6,5 @@ export const color = {
   lightBlue: "#b3d7ff",
   pink: "#d94fd4",
   darkPurple: "#601f6b",
-  purple: "#9e4oae",
+  purple: "#9e40ae",
 };
