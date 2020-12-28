@@ -1,36 +1,11 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-	@font-face {
-		font-family: 'museo_sans300', sans;
-		src: url('museosans-300-webfont.woff2') format('woff2'),
-			url('museosans-300-webfont.woff') format('woff');
-		font-weight: 300;
-		font-style: normal;
-	}
-
-
-	@font-face {
-		font-family: 'museo_sans500', sans;
-		src: url('museosans_500-webfont.woff2') format('woff2'),
-			url('museosans_500-webfont.woff') format('woff');
-		font-weight: 500;
-		font-style: normal;
-	}
-
-
-	@font-face {
-		font-family: 'museo_sans700', sans;
-		src: url('museosans_700-webfont.woff2') format('woff2'),
-			url('museosans_700-webfont.woff') format('woff');
-		font-weight: 700;
-		font-style: normal;
-	}
 
 	html, body, #root {
 		height: 100%;
 		margin: 0;
-		font-family: 'Playfair Display', serif;
+		font-family: 'Playfair Display', 'Roboto Slab', serif;
 		box-sizing: border-box;
 		font-size: 16px;
 	}
@@ -64,17 +39,6 @@ export default createGlobalStyle`
 		width: 100%;
 	}
 
-	.container {
-		max-width: 1280px;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.container2 {
-		max-width: 1680px;
-		width: 100%;
-		margin: 0 auto;
-	}
 
 	h1,
 	h2,
