@@ -6,7 +6,7 @@ export const HeaderWrap = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 60px 60px 0 60px;
+  padding: 60px 60px 36px 60px;
   position: absolute;
   top: 0;
   left: 0;

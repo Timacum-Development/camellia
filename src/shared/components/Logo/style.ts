@@ -16,6 +16,4 @@ export const LogoFlower = styled.img`
 
 export const LogoName = styled.img`
   display: block;
-  width: 239px;
-  height: 25px;
 `;

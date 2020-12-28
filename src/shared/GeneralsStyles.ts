@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { color } from "../shared/styles";
 
 export default createGlobalStyle`
 	@font-face {
@@ -83,5 +84,53 @@ export default createGlobalStyle`
 
 	button {
 		cursor: pointer;
+	}
+
+	h1 {
+		font-size: 10rem;
+		color: ${color.white};
+		margin-bottom: 30px;
+	}
+
+	h2 {
+		font-size: 4.5rem;
+	}
+
+	h3 {
+		font-size: 3.125rem;
+	}
+
+	h4 {
+		font-size: 1.0625rem;
+		font-family: 'Roboto Slab', serif;
+		color: ${color.white};
+		margin-bottom: 44px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+
+	h5 {
+		font-size: 0.9375rem;
+	}
+
+	h6 {
+		font-size: 0.75rem;
+		font-family: 'Roboto Slab', serif;
+		color: ${color.white};
+		letter-spacing: 2px;
+	}
+
+	p {
+		font-size: 1.0625rem;
+	}
+
+	.cta {
+		padding: 25px 51px;
+		border-radius: 4rem;
+  		text-align: center;
+  		font-family: 'Roboto Slab', serif;
+		font-weight: 700;
+		letter-spacing: 5px;
+		text-transform: uppercase;
 	}
 `;
