@@ -89,7 +89,6 @@ export default createGlobalStyle`
 	h1 {
 		font-size: 10rem;
 		color: ${color.white};
-		margin-bottom: 30px;
 	}
 
 	h2 {

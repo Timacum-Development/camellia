@@ -8,6 +8,8 @@ import {
   CtaWrap,
   SideWrap,
   SideIcon,
+  FirstLine,
+  SecondLine,
 } from "./style";
 
 // Assets
@@ -18,15 +20,18 @@ import ShopIcon from "../../../assets/shopping.png";
 import CallToAction from "../../../shared/components/CTA";
 import SocialMedia from "../../../shared/components/Social";
 import Slider from "../../../shared/components/Slider";
+import { FILE } from "dns";
 const Homepage = () => {
   return (
     <React.Fragment>
       <Hero>
         <Slider vertical />
+        <FirstLine />
         <FlowerWrap>
           <PinkFlower src={Flower1} />
           <BlueFlower src={Flower2} />
         </FlowerWrap>
+        <SecondLine />
         <HeroIntro>
           <h1>Dahlia</h1>
           <h4>Fresh & Silky Daily</h4>

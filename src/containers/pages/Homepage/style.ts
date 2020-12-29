@@ -21,7 +21,6 @@ export const CtaWrap = styled.div`
 `;
 
 export const FlowerWrap = styled.div`
-  display: flex;
   position: relative;
   left: 350px;
   bottom: 100px;
@@ -32,18 +31,17 @@ export const PinkFlower = styled.img`
   display: block;
   width: 494px;
   height: 474px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  top: 318px;
 `;
 
 export const BlueFlower = styled.img`
   display: block;
   width: 476px;
   height: 493px;
-  position: absolute;
-  top: -80px;
-  left: 50px;
+  position: relative;
+  left: 80px;
+  z-index: 1;
 `;
 
 export const SideWrap = styled.div`
@@ -58,4 +56,24 @@ export const SideWrap = styled.div`
 
 export const SideIcon = styled.img`
   display: block;
+`;
+
+export const FirstLine = styled.div`
+  width: 2px;
+  height: 738px;
+  background-color: ${color.white};
+  position: relative;
+  left: 300px;
+  bottom: -310px;
+  transform: rotate(46deg);
+`;
+
+export const SecondLine = styled.div`
+  width: 2px;
+  height: 738px;
+  background-color: ${color.white};
+  position: relative;
+  right: 15px;
+  top: -250px;
+  transform: rotate(46deg);
 `;
