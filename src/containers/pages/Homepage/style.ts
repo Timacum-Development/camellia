@@ -5,7 +5,7 @@ import { color } from "../../../shared/styles";
 import Background from "../../../assets/background.jpg";
 import Woman1 from "../../../assets/woman1.png";
 import Woman2 from "../../../assets/woman2.png";
-import WelcomeBg from "../../../assets/gardening.png";
+import WelcomeBg from "../../../assets/black-and-white.png";
 
 export const Hero = styled.section`
   display: flex;
@@ -29,10 +29,9 @@ export const PurpleLine = styled.div`
     width: 0;
     height: 0;
     position: absolute;
-    bottom: -100px;
+    bottom: -50px;
     border-top: 50px solid ${color.purple};
     border-right: 50px solid transparent;
-    border-bottom: 50px solid transparent;
   }
 `;
 
@@ -192,7 +191,6 @@ export const WomanSecond = styled.div`
 
 export const Welcome = styled.section`
   width: 100%;
-  height: 500px;
   background: url(${WelcomeBg}) no-repeat center;
   background-size: cover;
   position: relative;
@@ -240,7 +238,12 @@ export const WelcomeLineSecond = styled.div`
     top: -50px;
     right: 0;
     border-left: 50px solid transparent;
-    border-right: 50px solid ${color.blue};
     border-bottom: 50px solid ${color.blue};
   }
+`;
+
+export const WelcomeText = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 258px 0 119px 0;
 `;

@@ -24,6 +24,7 @@ import {
   WelcomeLine,
   LineWrap,
   WelcomeLineSecond,
+  WelcomeText,
 } from "./style";
 
 // Assets
@@ -100,6 +101,18 @@ const Homepage = () => {
           <WelcomeLine />
           <WelcomeLineSecond />
         </LineWrap>
+        <WelcomeText>
+          <HeadingWrap
+            headingFirst="Welcome to Our Shops"
+            headingSecond="Located in US & Australia"
+            styleFirst={{ color: "#601f6b" }}
+            styleSecond={{
+              color: "#9E40AE",
+              opacity: "0.5",
+              textAlign: "center",
+            }}
+          />
+        </WelcomeText>
       </Welcome>
     </React.Fragment>
   );
