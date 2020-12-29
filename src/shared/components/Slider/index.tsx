@@ -8,6 +8,8 @@ import {
   PurpleDot,
   WhiteArrowFirst,
   WhiteArrowSecond,
+  PurpleArrowFirst,
+  PurpleArrowSecond,
 } from "./style";
 
 const Slider = (props: any) => {
@@ -17,26 +19,54 @@ const Slider = (props: any) => {
       {vertical ? (
         <WhiteSlider>
           <WhiteArrowFirst />
-          <WhiteDot className="dot" />
-          <WhiteDot className="dot" />
-          <WhiteDot className="dot" />
-          <WhiteDot className="dot" />
-          <WhiteDot className="dot" />
+          <a href="/">
+            <WhiteDot className="dot" />
+          </a>
+          <a href="/">
+            <WhiteDot className="dot" />
+          </a>
+          <a href="/">
+            <WhiteDot className="dot" />
+          </a>
+          <a href="/">
+            <WhiteDot className="dot" />
+          </a>
+          <a href="/">
+            <WhiteDot className="dot" />
+          </a>
           <WhiteArrowSecond />
         </WhiteSlider>
       ) : !vertical && horizontal ? (
         <BlueSlider>
-          <BlueDot className="dot" />
-          <BlueDot className="dot" />
-          <BlueDot className="dot" />
-          <BlueDot className="dot" />
+          <a href="/">
+            <BlueDot className="dot" />
+          </a>
+          <a href="/">
+            <BlueDot className="dot" />
+          </a>
+          <a href="/">
+            <BlueDot className="dot" />
+          </a>
+          <a href="/">
+            <BlueDot className="dot" />
+          </a>
         </BlueSlider>
       ) : (
         <PurpleSlider>
-          <PurpleDot className="dot" />
-          <PurpleDot className="dot" />
-          <PurpleDot className="dot" />
-          <PurpleDot className="dot" />
+          <PurpleArrowFirst />
+          <a href="/">
+            <PurpleDot className="dot" />
+          </a>
+          <a href="/">
+            <PurpleDot className="dot" />
+          </a>
+          <a href="/">
+            <PurpleDot className="dot" />
+          </a>
+          <a href="/">
+            <PurpleDot className="dot" />
+          </a>
+          <PurpleArrowSecond />
         </PurpleSlider>
       )}
     </React.Fragment>

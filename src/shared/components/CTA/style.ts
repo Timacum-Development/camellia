@@ -38,7 +38,7 @@ export const CtaSecond = styled.a`
 `;
 
 export const CtaThird = styled.a`
-  background-color: ${color.blue}
+  background-color: ${color.blue};
   color: ${color.white};
   position: relative;
 
@@ -49,8 +49,8 @@ export const CtaThird = styled.a`
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 10%;
-    border: 1px solid rgba(86, 151, 223, 0.5);
+    left: -10%;
+    border: 1px solid ${color.blue};
     border-radius: 4rem;
   }
 `;

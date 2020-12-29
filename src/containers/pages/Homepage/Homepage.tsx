@@ -25,6 +25,10 @@ import {
   LineWrap,
   WelcomeLineSecond,
   WelcomeText,
+  Gallery,
+  Garden,
+  Room,
+  GallerySlider,
 } from "./style";
 
 // Assets
@@ -105,14 +109,23 @@ const Homepage = () => {
           <HeadingWrap
             headingFirst="Welcome to Our Shops"
             headingSecond="Located in US & Australia"
-            styleFirst={{ color: "#601f6b" }}
+            styleFirst={{ color: "#601f6b", textAlign: "center" }}
             styleSecond={{
               color: "#9E40AE",
               opacity: "0.5",
               textAlign: "center",
+              marginBottom: "59px",
             }}
           />
+          <CallToAction text="Shop Locator" />
         </WelcomeText>
+        <Gallery>
+          <GallerySlider>
+            <Room />
+            <Slider />
+          </GallerySlider>
+          <Garden />
+        </Gallery>
       </Welcome>
     </React.Fragment>
   );

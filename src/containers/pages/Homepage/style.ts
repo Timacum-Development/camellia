@@ -6,6 +6,8 @@ import Background from "../../../assets/background.jpg";
 import Woman1 from "../../../assets/woman1.png";
 import Woman2 from "../../../assets/woman2.png";
 import WelcomeBg from "../../../assets/black-and-white.png";
+import Gallery1 from "../../../assets/room.png";
+import Gallery2 from "../../../assets/gardening.png";
 
 export const Hero = styled.section`
   display: flex;
@@ -187,6 +189,7 @@ export const WomanSecond = styled.div`
   right: 150px;
   bottom: -20px;
   z-index: 50;
+  filter: drop-shadow(0px 10px 15px ${color.black});
 `;
 
 export const Welcome = styled.section`
@@ -243,7 +246,30 @@ export const WelcomeLineSecond = styled.div`
 `;
 
 export const WelcomeText = styled.div`
-  display: flex;
-  justify-content: center;
   padding: 258px 0 119px 0;
+  text-align: center;
+`;
+
+export const Gallery = styled.div`
+  display: flex;
+  max-width: 1480px;
+  margin: 0 auto;
+  position: relative;
+`;
+
+export const GallerySlider = styled.div``;
+export const Room = styled.div`
+  width: 791px;
+  height: 341px;
+  background: url(${Gallery1}) no-repeat center;
+`;
+
+export const Garden = styled.div`
+  width: 791px;
+  height: 341px;
+  background: url(${Gallery2}) no-repeat center;
+  margin-top: 100px;
+  filter: drop-shadow(0px 10px 15px ${color.black});
+  position: absolute;
+  right: 0;
 `;
