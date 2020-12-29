@@ -1,5 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { color } from "../../../shared/styles";
+
+export const SliderAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+`;
 
 export const WhiteSlider = styled.div`
   display: flex;
@@ -62,6 +76,7 @@ export const WhiteDot = styled.div`
 
   &:hover {
     background-color: ${color.white};
+    animation: ${SliderAnimation} 0.5s ease-in forwards;
   }
 `;
 
@@ -76,6 +91,7 @@ export const PurpleDot = styled.div`
 
   &:hover {
     background-color: ${color.purple};
+    animation: ${SliderAnimation} 0.5s ease-in forwards;
   }
 `;
 

@@ -273,3 +273,14 @@ export const Garden = styled.div`
   position: absolute;
   right: 0;
 `;
+
+export const WelcomePurpleLine = styled.div`
+  width: 1px;
+  height: 1110px;
+  background-color: ${color.purple};
+  position: absolute;
+  left: 55%;
+  top: 30%;
+  transform: rotate(45deg);
+  z-index: -1;
+`;

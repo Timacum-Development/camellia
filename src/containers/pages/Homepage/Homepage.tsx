@@ -29,6 +29,7 @@ import {
   Garden,
   Room,
   GallerySlider,
+  WelcomePurpleLine,
 } from "./style";
 
 // Assets
@@ -126,6 +127,7 @@ const Homepage = () => {
           </GallerySlider>
           <Garden />
         </Gallery>
+        <WelcomePurpleLine />
       </Welcome>
     </React.Fragment>
   );
