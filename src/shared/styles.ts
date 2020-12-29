@@ -7,4 +7,5 @@ export const color = {
   pink: "#d94fd4",
   darkPurple: "#601f6b",
   purple: "#9e40ae",
+  lightBlack: "#5E5E5E",
 };

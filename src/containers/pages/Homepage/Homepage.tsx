@@ -10,6 +10,20 @@ import {
   SideIcon,
   FirstLine,
   SecondLine,
+  Shop,
+  WhiteBg,
+  PurpleLine,
+  TextWrap,
+  ImageWrap,
+  InsideWrap,
+  WomanFirst,
+  WomanSecond,
+  PurpleHeroLine,
+  WhiteHeroLine,
+  Welcome,
+  WelcomeLine,
+  LineWrap,
+  WelcomeLineSecond,
 } from "./style";
 
 // Assets
@@ -20,7 +34,8 @@ import ShopIcon from "../../../assets/shopping.png";
 import CallToAction from "../../../shared/components/CTA";
 import SocialMedia from "../../../shared/components/Social";
 import Slider from "../../../shared/components/Slider";
-import { FILE } from "dns";
+import HeadingWrap from "../../../shared/components/Heading";
+
 const Homepage = () => {
   return (
     <React.Fragment>
@@ -50,7 +65,42 @@ const Homepage = () => {
             <SideIcon src={ShopIcon} />
           </a>
         </SideWrap>
+        <PurpleHeroLine />
+        <WhiteHeroLine />
       </Hero>
+      <Shop>
+        <PurpleLine />
+        <WhiteBg></WhiteBg>
+        <InsideWrap className="container">
+          <TextWrap>
+            <HeadingWrap
+              headingFirst="Camellia Flower Shop"
+              headingSecond="With love and dedication"
+              styleFirst={{ color: "#1D446E", maxWidth: "415px" }}
+              styleSecond={{ color: "#5697DF", marginBottom: "60px" }}
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat.
+            </p>
+            <CallToAction cta text="Our shop" />
+          </TextWrap>
+          <ImageWrap>
+            <WomanFirst />
+            <WomanSecond />
+          </ImageWrap>
+        </InsideWrap>
+      </Shop>
+      <Welcome>
+        <LineWrap>
+          <WelcomeLine />
+          <WelcomeLineSecond />
+        </LineWrap>
+      </Welcome>
     </React.Fragment>
   );
 };

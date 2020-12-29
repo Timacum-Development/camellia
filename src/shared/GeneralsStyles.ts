@@ -93,6 +93,7 @@ export default createGlobalStyle`
 
 	h2 {
 		font-size: 4.5rem;
+		margin-bottom: 17px;
 	}
 
 	h3 {
@@ -119,8 +120,12 @@ export default createGlobalStyle`
 		letter-spacing: 2px;
 	}
 
-	p {
+	p {	
 		font-size: 1.0625rem;
+		font-family: 'geomanistitalic', sans-serif;
+		color: ${color.lightBlack};
+		line-height: 2;
+		margin-bottom: 51px;
 	}
 
 	.cta {
@@ -137,5 +142,11 @@ export default createGlobalStyle`
 		width: 7px;
   		height: 7px;
   		border-radius: 50%;
+	}
+
+	.container {
+		max-width: 1280px;
+		width: 100%;
+		margin: 0 auto;
 	}
 `;
