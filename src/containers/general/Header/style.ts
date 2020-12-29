@@ -28,7 +28,7 @@ export const Burger = styled.button`
 export const BurgerLine = styled.span`
   display: block;
   width: 37px;
-  height: 3px;
+  height: 2px;
   background-color: ${color.purple};
 
   &:nth-child(2) {

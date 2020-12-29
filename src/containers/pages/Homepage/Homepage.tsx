@@ -6,18 +6,23 @@ import {
   PinkFlower,
   BlueFlower,
   CtaWrap,
+  SideWrap,
+  SideIcon,
 } from "./style";
 
 // Assets
 import Flower1 from "../../../assets/purple-half.png";
 import Flower2 from "../../../assets/blue-half.png";
+import ShopIcon from "../../../assets/shopping.png";
 
 import CallToAction from "../../../shared/components/CTA";
-
+import SocialMedia from "../../../shared/components/Social";
+import Slider from "../../../shared/components/Slider";
 const Homepage = () => {
   return (
     <React.Fragment>
       <Hero>
+        <Slider vertical />
         <FlowerWrap>
           <PinkFlower src={Flower1} />
           <BlueFlower src={Flower2} />
@@ -34,6 +39,12 @@ const Homepage = () => {
             <h6>From $12.95</h6>
           </CtaWrap>
         </HeroIntro>
+        <SideWrap>
+          <SocialMedia />
+          <a href="/">
+            <SideIcon src={ShopIcon} />
+          </a>
+        </SideWrap>
       </Hero>
     </React.Fragment>
   );

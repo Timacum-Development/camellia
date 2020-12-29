@@ -133,4 +133,10 @@ export default createGlobalStyle`
 		letter-spacing: 5px;
 		text-transform: uppercase;
 	}
+
+	.dot {
+		width: 7px;
+  		height: 7px;
+  		border-radius: 50%;
+	}
 `;
