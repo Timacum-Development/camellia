@@ -30,6 +30,8 @@ import {
   Room,
   GallerySlider,
   WelcomePurpleLine,
+  WomanLine,
+  WomanLineSecond,
 } from "./style";
 
 // Assets
@@ -78,6 +80,7 @@ const Homepage = () => {
         <PurpleLine />
         <WhiteBg></WhiteBg>
         <InsideWrap className="container">
+          <WomanLineSecond />
           <TextWrap>
             <HeadingWrap
               headingFirst="Camellia Flower Shop"
@@ -99,6 +102,7 @@ const Homepage = () => {
             <WomanFirst />
             <WomanSecond />
           </ImageWrap>
+          <WomanLine />
         </InsideWrap>
       </Shop>
       <Welcome>

@@ -192,8 +192,34 @@ export const WomanSecond = styled.div`
   filter: drop-shadow(0px 10px 15px ${color.black});
 `;
 
+export const WomanLine = styled.div`
+  width: 1px;
+  height: 928px;
+  background-color: ${color.blue};
+  transform: rotate(40deg);
+  z-index: -1;
+  position: absolute;
+  right: 100px;
+  position: absolute;
+  left: 75%;
+  top: 100px;
+`;
+
+export const WomanLineSecond = styled.div`
+  width: 1px;
+  height: 708px;
+  background-color: ${color.purple};
+  opacity: 0.5;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0;
+  top: 45%;
+`;
+
 export const Welcome = styled.section`
   width: 100%;
+  height: 0;
+  padding-bottom: 62.25%;
   background: url(${WelcomeBg}) no-repeat center;
   background-size: cover;
   position: relative;
@@ -279,8 +305,8 @@ export const WelcomePurpleLine = styled.div`
   height: 1110px;
   background-color: ${color.purple};
   position: absolute;
-  left: 55%;
-  top: 30%;
+  left: 60%;
+  top: 20%;
   transform: rotate(45deg);
   z-index: -1;
 `;
