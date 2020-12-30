@@ -10,6 +10,7 @@ import Gallery1 from "../../../assets/room.png";
 import Gallery2 from "../../../assets/gardening.png";
 import FlowerBg from "../../../assets/pink-flowers.png";
 import Woman3 from "../../../assets/woman3.png";
+import ProductBcg from "../../../assets/black-white.png";
 
 export const Hero = styled.section`
   display: flex;
@@ -226,6 +227,7 @@ export const Welcome = styled.section`
   background-size: cover;
   position: relative;
   z-index: 1;
+  margin-bottom: 64px;
 
   &:before {
     content: "";
@@ -255,7 +257,7 @@ export const WelcomeLine = styled.div`
   width: 100%;
   max-width: 1642px;
   height: 7px;
-  background: linear-gradient(to right, #9e40ae 60%, #5697df 40%);
+  background: linear-gradient(to right, ${color.purple} 60%, ${color.blue} 40%);
   position: relative;
 
   &:before {
@@ -320,6 +322,7 @@ export const Service = styled.section`
   background-size: cover;
   position: relative;
   z-index: 1;
+  margin-bottom: 151px;
 
   &:before {
     content: "";
@@ -330,7 +333,11 @@ export const Service = styled.section`
     top: 0;
     opacity: 0.95;
     z-index: -1;
-    background: linear-gradient(to right, #5697df 50%, #9e40ae 50%);
+    background: linear-gradient(
+      to right,
+      ${color.blue} 50%,
+      ${color.purple} 50%
+    );
   }
 `;
 
@@ -395,4 +402,37 @@ export const CustomerLine = styled.div`
     border-left: 50px solid ${color.blue};
     border-top: 50px solid transparent;
   }
+`;
+
+export const Products = styled.section`
+  width: 100%;
+`;
+
+export const ProductsBg = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: url(${ProductBcg}) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba(255, 255, 255, 1) 10%,
+      rgba(255, 255, 255, 0.8) 90%
+    );
+    z-index: -1;
+  }
+`;
+
+export const Flower = styled.div`
+  display: flex;
 `;

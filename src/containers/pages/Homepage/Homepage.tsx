@@ -37,6 +37,9 @@ import {
   CustomerText,
   Quote,
   CustomerLine,
+  Products,
+  ProductsBg,
+  Flower,
 } from "./style";
 
 // Assets
@@ -153,6 +156,22 @@ const Homepage = () => {
           </CustomerText>
         </Customers>
       </Service>
+      <Products>
+        <ProductsBg>
+          <HeadingWrap
+            headingFirst="Featured Products"
+            headingSecond="Fresh & Silky Daily"
+            style={{ padding: "139px 0px" }}
+            styleFirst={{ color: "#1d446e", marginBottom: "29px" }}
+            styleSecond={{
+              color: "#5697df",
+              opacity: "0.5",
+              textAlign: "center",
+            }}
+          />
+        </ProductsBg>
+        <Flower className="container"></Flower>
+      </Products>
     </React.Fragment>
   );
 };
