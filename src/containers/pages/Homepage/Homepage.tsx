@@ -40,6 +40,7 @@ import {
   Products,
   ProductsBg,
   Flower,
+  SliderWrap,
 } from "./style";
 
 // Assets
@@ -159,7 +160,7 @@ const Homepage = () => {
             </h3>
             <h5>by Samantha Johnson</h5>
             <Quote src={QuoteImg} />
-            <Slider horizontal />
+            <Slider horizontal blueSlider={{ left: "404px", bottom: "40px" }} />
           </CustomerText>
         </Customers>
       </Service>
@@ -212,6 +213,9 @@ const Homepage = () => {
             buyBag={BlueBag}
           />
         </Flower>
+        <SliderWrap>
+          <Slider horizontal />
+        </SliderWrap>
       </Products>
     </React.Fragment>
   );

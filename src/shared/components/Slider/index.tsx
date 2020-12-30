@@ -15,7 +15,7 @@ import {
 } from "./style";
 
 const Slider = (props: any) => {
-  const { vertical, horizontal } = props;
+  const { vertical, horizontal, blueSlider } = props;
   return (
     <React.Fragment>
       {vertical ? (
@@ -39,7 +39,7 @@ const Slider = (props: any) => {
           <WhiteArrowSecond />
         </WhiteSlider>
       ) : !vertical && horizontal ? (
-        <BlueSlider>
+        <BlueSlider style={blueSlider}>
           <BlueArrowFirst />
           <a href="/">
             <BlueDot className="dot" />

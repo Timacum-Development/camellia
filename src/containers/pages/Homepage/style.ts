@@ -11,15 +11,30 @@ import Gallery2 from "../../../assets/gardening.png";
 import FlowerBg from "../../../assets/pink-flowers.png";
 import Woman3 from "../../../assets/woman3.png";
 import ProductBcg from "../../../assets/black-white.png";
+import HeroFlower from "../../../assets/flower-bg-hero.jpg";
 
 export const Hero = styled.section`
   display: flex;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 55px);
   background: url(${Background}) no-repeat center;
+  height: calc(100vh - 55px);
   background-size: cover;
   position: relative;
+  z-index: 1;
+  background-blend-mode: lighten;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(${HeroFlower}) no-repeat center right;
+    background-size: cover;
+    opacity: 0.1;
+  }
 `;
 
 export const PurpleLine = styled.div`
@@ -438,4 +453,10 @@ export const Flower = styled.div`
   position: relative;
   z-index: 100;
   top: -110px;
+`;
+
+export const SliderWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;

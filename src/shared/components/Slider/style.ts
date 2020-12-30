@@ -63,8 +63,6 @@ export const BlueSlider = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  left: 404px;
-  bottom: 40px;
 `;
 
 export const BlueArrowFirst = styled.div`
