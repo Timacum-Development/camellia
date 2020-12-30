@@ -18,7 +18,7 @@ const Card = (props: any) => {
     buy,
     styleFlower,
     buyBag,
-    stylePrice,
+    styleBuy,
   } = props;
   return (
     <React.Fragment>
@@ -26,13 +26,13 @@ const Card = (props: any) => {
         <FlowerImg src={flowerUrl} style={styleFlower} />
         <FlowerText>
           <FlowerName>{text}</FlowerName>
-          <FlowerPrice style={stylePrice}>{textSecond}</FlowerPrice>
+          <FlowerPrice>{textSecond}</FlowerPrice>
         </FlowerText>
         <IconWrap>
           <a href="/">
             <BuyImg src={buyBag} />
           </a>
-          <BuyNow>{buy}</BuyNow>
+          <BuyNow style={styleBuy}>{buy}</BuyNow>
         </IconWrap>
       </FlowerCard>
     </React.Fragment>

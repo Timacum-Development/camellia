@@ -435,4 +435,7 @@ export const ProductsBg = styled.div`
 
 export const Flower = styled.div`
   display: flex;
+  position: relative;
+  z-index: 100;
+  top: -110px;
 `;

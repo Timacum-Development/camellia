@@ -193,7 +193,7 @@ const Homepage = () => {
             buy="Buy now"
             styleFlower={{ marginBottom: "43px" }}
             buyBag={PurpleBag}
-            stylePrice={{ color: "#9e40ae" }}
+            styleBuy={{ color: "#9e40ae" }}
           />
           <Card
             flowerUrl={Rose}

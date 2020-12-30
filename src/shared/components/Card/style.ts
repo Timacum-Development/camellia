@@ -6,6 +6,27 @@ export const FlowerCard = styled.div`
   flex-direction: column;
   align-items: center;
   width: 25%;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 70px;
+    background-color: ${color.white};
+    z-index: -1;
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: 0 40px 50px -50px ${color.black};
+
+    &:after {
+      display: block;
+    }
+  }
 `;
 
 export const FlowerImg = styled.img`
@@ -55,6 +76,7 @@ export const BuyNow = styled.a`
   text-transform: uppercase;
   color: ${color.blue};
   letter-spacing: 2px;
+  margin-bottom: 40px;
 `;
 
 export const BuyImg = styled.img`
