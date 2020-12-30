@@ -47,11 +47,18 @@ import Flower1 from "../../../assets/purple-half.png";
 import Flower2 from "../../../assets/blue-half.png";
 import ShopIcon from "../../../assets/shopping.png";
 import QuoteImg from "../../../assets/quote.png";
+import Dahlia from "../../../assets/dahlia.png";
+import Daisy from "../../../assets/daisy.png";
+import Rose from "../../../assets/rose.png";
+import Tulip from "../../../assets/tulip.png";
+import BlueBag from "../../../assets/shopping-bag-blue.png";
+import PurpleBag from "../../../assets/purplebag.png";
 
 import CallToAction from "../../../shared/components/CTA";
 import SocialMedia from "../../../shared/components/Social";
 import Slider from "../../../shared/components/Slider";
 import HeadingWrap from "../../../shared/components/Heading";
+import Card from "../../../shared/components/Card";
 
 const Homepage = () => {
   return (
@@ -170,7 +177,41 @@ const Homepage = () => {
             }}
           />
         </ProductsBg>
-        <Flower className="container"></Flower>
+        <Flower className="container">
+          <Card
+            flowerUrl={Dahlia}
+            text="Dahlia"
+            textSecond="From $12.95"
+            buy="Buy now"
+            styleFlower={{ marginBottom: "40px" }}
+            buyBag={BlueBag}
+          />
+          <Card
+            flowerUrl={Daisy}
+            text="Daisy"
+            textSecond="From $7.45"
+            buy="Buy now"
+            styleFlower={{ marginBottom: "43px" }}
+            buyBag={PurpleBag}
+            stylePrice={{ color: "#9e40ae" }}
+          />
+          <Card
+            flowerUrl={Rose}
+            text="Rose"
+            textSecond="From $8.00"
+            buy="Buy now"
+            styleFlower={{ marginBottom: "61px" }}
+            buyBag={BlueBag}
+          />
+          <Card
+            flowerUrl={Tulip}
+            text="Tulip"
+            textSecond="From $5.95"
+            buy="Buy now"
+            styleFlower={{ marginBottom: "68px" }}
+            buyBag={BlueBag}
+          />
+        </Flower>
       </Products>
     </React.Fragment>
   );
