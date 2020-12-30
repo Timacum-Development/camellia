@@ -98,6 +98,8 @@ export default createGlobalStyle`
 
 	h3 {
 		font-size: 3.125rem;
+		color: ${color.darkPurple};
+		margin-bottom: 22px;
 	}
 
 	h4 {
@@ -111,6 +113,11 @@ export default createGlobalStyle`
 
 	h5 {
 		font-size: 0.9375rem;
+		font-family: 'Roboto Slab', sans-serif;
+		font-weight: 700;
+		color: ${color.blue};
+		opacity: 0.5;
+		letter-spacing: 2px;
 	}
 
 	h6 {

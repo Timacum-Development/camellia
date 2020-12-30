@@ -61,6 +61,57 @@ export const WhiteArrowSecond = styled.div`
 
 export const BlueSlider = styled.div`
   display: flex;
+  align-items: center;
+  position: relative;
+  left: 404px;
+  bottom: 40px;
+`;
+
+export const BlueArrowFirst = styled.div`
+  width: 41px;
+  height: 3px;
+  background-color: rgba(86, 151, 223, 0.5);
+  margin-right: 29px;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: rgba(86, 151, 223, 0.5);
+    transform: rotate(40deg);
+  }
+`;
+
+export const BlueArrowSecond = styled.div`
+  width: 41px;
+  height: 3px;
+  background-color: rgba(86, 151, 223, 0.5);
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background-color: rgba(86, 151, 223, 0.5);
+    transform: rotate(-40deg);
+  }
+`;
+
+export const BlueDot = styled.div`
+  border: 1px solid ${color.blue};
+  margin-right: 23px;
+
+  &:hover {
+    background-color: ${color.blue};
+    animation: ${SliderAnimation} 0.5s ease-in forwards;
+  }
 `;
 
 export const PurpleSlider = styled.div`
@@ -78,10 +129,6 @@ export const WhiteDot = styled.div`
     background-color: ${color.white};
     animation: ${SliderAnimation} 0.5s ease-in forwards;
   }
-`;
-
-export const BlueDot = styled.div`
-  border: 1px solid ${color.blue};
 `;
 
 export const PurpleDot = styled.div`

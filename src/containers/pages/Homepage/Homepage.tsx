@@ -23,7 +23,6 @@ import {
   Welcome,
   WelcomeLine,
   LineWrap,
-  WelcomeLineSecond,
   WelcomeText,
   Gallery,
   Garden,
@@ -32,12 +31,19 @@ import {
   WelcomePurpleLine,
   WomanLine,
   WomanLineSecond,
+  Service,
+  Customers,
+  CustomerImg,
+  CustomerText,
+  Quote,
+  CustomerLine,
 } from "./style";
 
 // Assets
 import Flower1 from "../../../assets/purple-half.png";
 import Flower2 from "../../../assets/blue-half.png";
 import ShopIcon from "../../../assets/shopping.png";
+import QuoteImg from "../../../assets/quote.png";
 
 import CallToAction from "../../../shared/components/CTA";
 import SocialMedia from "../../../shared/components/Social";
@@ -108,7 +114,6 @@ const Homepage = () => {
       <Welcome>
         <LineWrap>
           <WelcomeLine />
-          <WelcomeLineSecond />
         </LineWrap>
         <WelcomeText>
           <HeadingWrap
@@ -133,6 +138,21 @@ const Homepage = () => {
         </Gallery>
         <WelcomePurpleLine />
       </Welcome>
+      <Service>
+        <CustomerLine />
+        <Customers>
+          <CustomerImg />
+          <CustomerText>
+            <h3>
+              Camellia recognizes that flower is the most eligible object in the
+              world.
+            </h3>
+            <h5>by Samantha Johnson</h5>
+            <Quote src={QuoteImg} />
+            <Slider horizontal />
+          </CustomerText>
+        </Customers>
+      </Service>
     </React.Fragment>
   );
 };

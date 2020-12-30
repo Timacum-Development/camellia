@@ -8,6 +8,8 @@ import Woman2 from "../../../assets/woman2.png";
 import WelcomeBg from "../../../assets/black-and-white.png";
 import Gallery1 from "../../../assets/room.png";
 import Gallery2 from "../../../assets/gardening.png";
+import FlowerBg from "../../../assets/pink-flowers.png";
+import Woman3 from "../../../assets/woman3.png";
 
 export const Hero = styled.section`
   display: flex;
@@ -219,7 +221,7 @@ export const WomanLineSecond = styled.div`
 export const Welcome = styled.section`
   width: 100%;
   height: 0;
-  padding-bottom: 62.25%;
+  padding-bottom: 64.25%;
   background: url(${WelcomeBg}) no-repeat center;
   background-size: cover;
   position: relative;
@@ -230,10 +232,12 @@ export const Welcome = styled.section`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: ${color.white};
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 1)
+    );
     left: 0;
     top: 0;
-    opacity: 0.9;
     z-index: -1;
   }
 `;
@@ -248,15 +252,10 @@ export const LineWrap = styled.div`
 `;
 
 export const WelcomeLine = styled.div`
-  width: 60%;
+  width: 100%;
+  max-width: 1642px;
   height: 7px;
-  background-color: ${color.purple};
-`;
-
-export const WelcomeLineSecond = styled.div`
-  width: 40%;
-  height: 7px;
-  background-color: ${color.blue};
+  background: linear-gradient(to right, #9e40ae 60%, #5697df 40%);
   position: relative;
 
   &:before {
@@ -295,7 +294,7 @@ export const Garden = styled.div`
   height: 341px;
   background: url(${Gallery2}) no-repeat center;
   margin-top: 100px;
-  filter: drop-shadow(0px 10px 15px ${color.black});
+  box-shadow: 0 20px 80px -40px ${color.black};
   position: absolute;
   right: 0;
 `;
@@ -309,4 +308,91 @@ export const WelcomePurpleLine = styled.div`
   top: 20%;
   transform: rotate(45deg);
   z-index: -1;
+`;
+
+export const Service = styled.section`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 22.25%;
+  background: url(${FlowerBg}) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.95;
+    z-index: -1;
+    background: linear-gradient(to right, #5697df 50%, #9e40ae 50%);
+  }
+`;
+
+export const Customers = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 1281px;
+  height: 0;
+  padding-bottom: 28.25%;
+  background-color: ${color.white};
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 20px 50px -40px ${color.black};
+`;
+
+export const CustomerImg = styled.div`
+  width: 33%;
+  height: 0;
+  padding-bottom: 39.25%;
+  background: url(${Woman3}) no-repeat center;
+  position: relative;
+  top: 80px;
+  left: 60px;
+`;
+
+export const CustomerText = styled.div`
+  position: relative;
+  top: 162px;
+  left: 150px;
+  max-width: 600px;
+`;
+
+export const Quote = styled.img`
+  display: block;
+  width: 123px;
+  height: 102px;
+  opacity: 0.2;
+  position: relative;
+  left: 388px;
+  top: -80px;
+`;
+
+export const CustomerLine = styled.div`
+  width: 100%;
+  height: 7px;
+  position: relative;
+  top: -5px;
+  background: linear-gradient(
+    to right,
+    ${color.blue} 50%,
+    ${color.darkPurple} 50%
+  );
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    border-left: 50px solid ${color.blue};
+    border-top: 50px solid transparent;
+  }
 `;

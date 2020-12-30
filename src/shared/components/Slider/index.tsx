@@ -10,6 +10,8 @@ import {
   WhiteArrowSecond,
   PurpleArrowFirst,
   PurpleArrowSecond,
+  BlueArrowFirst,
+  BlueArrowSecond,
 } from "./style";
 
 const Slider = (props: any) => {
@@ -38,6 +40,7 @@ const Slider = (props: any) => {
         </WhiteSlider>
       ) : !vertical && horizontal ? (
         <BlueSlider>
+          <BlueArrowFirst />
           <a href="/">
             <BlueDot className="dot" />
           </a>
@@ -50,6 +53,7 @@ const Slider = (props: any) => {
           <a href="/">
             <BlueDot className="dot" />
           </a>
+          <BlueArrowSecond />
         </BlueSlider>
       ) : (
         <PurpleSlider>
