@@ -22,7 +22,6 @@ export const Hero = styled.section`
   background-size: cover;
   position: relative;
   z-index: 1;
-  background-blend-mode: lighten;
 
   &:before {
     content: "";
@@ -31,9 +30,10 @@ export const Hero = styled.section`
     position: absolute;
     left: 0;
     top: 0;
-    background: url(${HeroFlower}) no-repeat center right;
+    background: url(${HeroFlower}) no-repeat center;
     background-size: cover;
     opacity: 0.1;
+    mix-blend-mode: overlay;
   }
 `;
 
