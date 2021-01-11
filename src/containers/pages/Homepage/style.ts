@@ -130,7 +130,7 @@ export const SecondLine = styled.div`
 
 export const Shop = styled.section`
   position: relative;
-  z-index: 1;
+  z-index: 100;
 
   &:before {
     content: "";
@@ -192,37 +192,35 @@ export const ImageWrap = styled.div`
   width: 50%;
   position: relative;
   padding-top: 81px;
+  z-index: 100;
 `;
 
 export const WomanFirst = styled.div`
   width: 100%;
   max-width: 591px;
-  height: 621px;
+  height: 650px;
   background: url(${Woman1}) no-repeat center;
 `;
 
 export const WomanSecond = styled.div`
   width: 641px;
-  height: 421px;
+  height: 450px;
   background: url(${Woman2}) no-repeat center;
   position: absolute;
   right: 150px;
-  bottom: -20px;
+  bottom: -50px;
   z-index: 50;
-  filter: drop-shadow(0px 10px 15px ${color.black});
+  filter: drop-shadow(0px 5px 15px ${color.black});
 `;
 
 export const WomanLine = styled.div`
   width: 1px;
-  height: 928px;
+  height: 1400px;
   background-color: ${color.blue};
-  transform: rotate(40deg);
+  transform: rotate(45deg);
   z-index: -1;
   position: absolute;
-  right: 100px;
-  position: absolute;
-  left: 75%;
-  top: 100px;
+  left: 67%;
 `;
 
 export const WomanLineSecond = styled.div`
@@ -358,6 +356,29 @@ export const Service = styled.section`
   }
 `;
 
+export const ServiceLineFirst = styled.div`
+  width: 1px;
+  height: 175px;
+  background-color: ${color.blue};
+  position: absolute;
+  left: 70%;
+  z-index: 50;
+  top: -100px;
+  transform: rotate(45deg);
+`;
+
+export const ServiceLineSecond = styled.div`
+  width: 1px;
+  height: 400px;
+  background-color: ${color.lightPurple};
+  opacity: 0.5;
+  position: absolute;
+  left: 45%;
+  z-index: 50;
+  bottom: -300px;
+  transform: rotate(45deg);
+`;
+
 export const Customers = styled.div`
   display: flex;
   width: 100%;
@@ -427,11 +448,16 @@ export const Products = styled.section`
   z-index: 1;
 `;
 
-// export const ProductBlueLine = styled.div`
-//   width: 1px;
-//   height: 805px;
-//   background-color: ${color.blue};
-// `;
+export const ProductBlueLine = styled.div`
+  width: 1px;
+  height: 1000px;
+  background-color: ${color.blue};
+  position: absolute;
+  left: 60%;
+  top: -55%;
+  transform: rotate(45deg);
+  z-index: -50;
+`;
 
 export const ProductsBottom = styled.div`
   display: flex;
@@ -476,18 +502,6 @@ export const Flower = styled.div`
   position: relative;
   z-index: 100;
   top: -110px;
-
-  &:before {
-    content: "";
-    width: 1px;
-    height: 1000px;
-    background-color: ${color.blue};
-    position: absolute;
-    left: 55%;
-    top: -50%;
-    transform: rotate(45deg);
-    z-index: -1;
-  }
 `;
 
 export const SliderWrap = styled.div`
