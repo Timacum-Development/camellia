@@ -99,7 +99,7 @@ export const SideWrap = styled.div`
   justify-content: space-between;
   height: 40%;
   position: absolute;
-  bottom: 100px;
+  bottom: 120px;
   right: 65px;
 `;
 
@@ -438,7 +438,7 @@ export const ProductsBottom = styled.div`
   height: 300px;
   background-color: #fff;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 81% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 77% 100%, 0% 100%);
   position: absolute;
   z-index: -1;
   bottom: -100px;
@@ -492,4 +492,6 @@ export const SliderWrap = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  position: absolute;
+  bottom: 30px;
 `;

@@ -32,9 +32,32 @@ export const FooterInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 740px;
+    height: 2px;
+    background-color: ${color.white};
+    opacity: 0.5;
+    position: absolute;
+    right: -250px;
+    bottom: 0;
+  }
 `;
 
 export const FooterNav = styled.nav`
   display: flex;
   margin-bottom: 50px;
+`;
+
+export const FooterLine = styled.div`
+  content: "";
+  width: 735px;
+  height: 7px;
+  background-color: ${color.purple};
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  right: 0;
 `;

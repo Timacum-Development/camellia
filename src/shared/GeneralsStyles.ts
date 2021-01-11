@@ -171,4 +171,12 @@ export default createGlobalStyle`
 			margin-right: 0;
 		}
 	}
+
+	.icon {
+		margin-bottom: 24px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 `;

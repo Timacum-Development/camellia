@@ -1,14 +1,15 @@
 import React from "react";
-import { FooterWrap, FooterInfo, FooterNav } from "./style";
+import { FooterWrap, FooterInfo, FooterNav, FooterLine } from "./style";
 
 import Logo from "../../../shared/components/Logo";
 import SocialMedia from "../../../shared/components/Social";
 import Link from "../../../shared/components/Link";
+import { FooterLink } from "../../../shared/components/Link/style";
 
 const Footer = () => {
   return (
     <FooterWrap>
-      <SocialMedia />
+      <SocialMedia style={{ paddingTop: "100px" }} />
       <FooterInfo>
         <Logo
           style={{ flexDirection: "row-reverse", marginBottom: "43px" }}
@@ -34,6 +35,7 @@ const Footer = () => {
           </ul>
         </FooterNav>
       </FooterInfo>
+      <FooterLine />
     </FooterWrap>
   );
 };

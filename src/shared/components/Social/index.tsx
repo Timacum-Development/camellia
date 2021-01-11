@@ -10,13 +10,13 @@ const SocialMedia = (props: any) => {
   const { style } = props;
   return (
     <SocialWrap style={style}>
-      <a href="/">
+      <a href="/" className="icon">
         <SocialIcon src={Twitter} />
       </a>
-      <a href="/">
+      <a href="/" className="icon">
         <SocialIcon src={Facebook} />
       </a>
-      <a href="/">
+      <a href="/" className="icon">
         <SocialIcon src={Pinterest} />
       </a>
     </SocialWrap>
