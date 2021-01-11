@@ -26,6 +26,17 @@ export const FooterWrap = styled.footer`
     opacity: 0.1;
     mix-blend-mode: overlay;
   }
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-right: 50px solid ${color.purple};
+    border-top: 50px solid transparent;
+    right: 0;
+    top: -50px;
+  }
 `;
 
 export const FooterInfo = styled.div`
@@ -53,11 +64,36 @@ export const FooterNav = styled.nav`
 
 export const FooterLine = styled.div`
   content: "";
-  width: 735px;
+  width: 781px;
   height: 7px;
   background-color: ${color.purple};
   position: absolute;
   top: 0;
   z-index: 10;
   right: 0;
+  clip-path: polygon(1% 0%, 0% 100%, 100% 100%, 100% 0%);
+`;
+
+export const LineTop = styled.div`
+  width: 720px;
+  height: 7px;
+  background-color: ${color.purple};
+  position: absolute;
+  left: 310px;
+  top: 100px;
+  clip-path: polygon(0% 0%, 100% 0%, 99% 100%, 0% 100%);
+  z-index: 100;
+`;
+
+export const RotatedLine = styled.div`
+  width: 1px;
+  height: 500px;
+  background-color: ${color.white};
+  position: absolute;
+  left: 916px;
+  bottom: -71px;
+  transform: rotate(45deg);
+  z-index: 100;
+  filter: drop-shadow(0 15px 10px ${color.black});
+  z-index: 1;
 `;

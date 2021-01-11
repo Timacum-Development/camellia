@@ -434,6 +434,8 @@ export const Products = styled.section`
 // `;
 
 export const ProductsBottom = styled.div`
+  display: flex;
+  justify-content: flex-end;
   width: 70%;
   height: 300px;
   background-color: #fff;
