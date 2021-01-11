@@ -3,7 +3,6 @@ import { color } from "../../styles";
 
 export const LogoWrap = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
 `;
 

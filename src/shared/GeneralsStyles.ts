@@ -156,4 +156,19 @@ export default createGlobalStyle`
 		width: 100%;
 		margin: 0 auto;
 	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+
+	li {
+		list-style-type: none;
+		margin-right: 55px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 `;

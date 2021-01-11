@@ -41,6 +41,7 @@ import {
   ProductsBg,
   Flower,
   SliderWrap,
+  ProductsBottom,
 } from "./style";
 
 // Assets
@@ -216,6 +217,7 @@ const Homepage = () => {
         <SliderWrap>
           <Slider horizontal />
         </SliderWrap>
+        <ProductsBottom />
       </Products>
     </React.Fragment>
   );

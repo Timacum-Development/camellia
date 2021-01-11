@@ -30,9 +30,11 @@ export const Hero = styled.section`
     position: absolute;
     left: 0;
     top: 0;
-    background: url(${HeroFlower}) no-repeat center;
-    background-size: cover;
-    opacity: 0.1;
+    background: url(${HeroFlower}) no-repeat;
+    /* background-size: cover; */
+    background-position: 100% 30%;
+    background-attachment: fixed;
+    opacity: 0.15;
     mix-blend-mode: overlay;
   }
 `;
@@ -421,6 +423,25 @@ export const CustomerLine = styled.div`
 
 export const Products = styled.section`
   width: 100%;
+  position: relative;
+  z-index: 1;
+`;
+
+// export const ProductBlueLine = styled.div`
+//   width: 1px;
+//   height: 805px;
+//   background-color: ${color.blue};
+// `;
+
+export const ProductsBottom = styled.div`
+  width: 70%;
+  height: 300px;
+  background-color: #fff;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 81% 100%, 0% 100%);
+  position: absolute;
+  z-index: -1;
+  bottom: -100px;
 `;
 
 export const ProductsBg = styled.div`
@@ -453,6 +474,18 @@ export const Flower = styled.div`
   position: relative;
   z-index: 100;
   top: -110px;
+
+  &:before {
+    content: "";
+    width: 1px;
+    height: 1000px;
+    background-color: ${color.blue};
+    position: absolute;
+    left: 55%;
+    top: -50%;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
 `;
 
 export const SliderWrap = styled.div`
