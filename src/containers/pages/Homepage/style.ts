@@ -527,25 +527,13 @@ export const Products = styled.section`
   }
 `;
 
-// export const ProductBlueLine = styled.div`
-//   width: 1px;
-//   height: 1000px;
-//   background-color: ${color.blue};
-//   position: absolute;
-//   left: 60%;
-//   top: -55%;
-//   transform: rotate(45deg);
-//   z-index: -50;
-// `;
-
 export const ProductsBottom = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 70%;
-  height: 300px;
+  height: 451px;
   background-color: #fff;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 77% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 112% 0%, 77% 100%, 0% 100%);
   position: absolute;
   z-index: -1;
   bottom: -100px;
