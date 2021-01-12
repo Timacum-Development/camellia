@@ -94,7 +94,7 @@ export const RotatedLine = styled.div`
   bottom: -71px;
   transform: rotate(45deg);
   z-index: 100;
-  filter: drop-shadow(0 15px 10px ${color.black});
+  filter: drop-shadow(5px 0px 5px ${color.black});
   z-index: 1;
 `;
 

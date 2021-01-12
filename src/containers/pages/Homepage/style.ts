@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { color } from "../../../shared/styles";
 
 // Assets
@@ -12,6 +12,26 @@ import FlowerBg from "../../../assets/pink-flowers.png";
 import Woman3 from "../../../assets/woman3.png";
 import ProductBcg from "../../../assets/black-white.png";
 import HeroFlower from "../../../assets/flower-bg-hero.jpg";
+
+export const FlowerPink = keyframes`
+  0% {
+    transform: perspective(300px) translateZ(-600px);
+  }
+
+  100% {
+    transform: translateZ(0px);
+  }
+`;
+
+export const FlowerBlue = keyframes`
+  0% {
+    transform: perspective(300px) translateZ(-600px);
+  }
+
+  100% {
+    transform: translateZ(0px);
+  }
+`;
 
 export const Hero = styled.section`
   display: flex;
@@ -77,6 +97,7 @@ export const HeroIntro = styled.div`
 export const CtaWrap = styled.div`
   display: flex;
   align-items: center;
+  animation: ${FlowerPink} 1.2s ease-in-out forwards;
 `;
 
 export const FlowerWrap = styled.div`
@@ -105,6 +126,7 @@ export const PinkFlower = styled.img`
   position: relative;
   /* top: 318px; */
   top: 234px;
+  animation: ${FlowerPink} 1.2s ease-in-out forwards;
 `;
 
 export const BlueFlower = styled.img`
@@ -115,6 +137,7 @@ export const BlueFlower = styled.img`
   left: 80px;
   bottom: 100px;
   z-index: 1;
+  animation: ${FlowerBlue} 1.2s ease-in-out forwards;
 `;
 
 export const SideWrap = styled.div`
@@ -132,7 +155,7 @@ export const SideIcon = styled.img`
 `;
 
 export const FirstLine = styled.div`
-  width: 2px;
+  width: 1px;
   height: 738px;
   background-color: ${color.white};
   position: relative;
@@ -143,7 +166,7 @@ export const FirstLine = styled.div`
 `;
 
 export const SecondLine = styled.div`
-  width: 2px;
+  width: 1px;
   height: 738px;
   background-color: ${color.white};
   position: relative;
@@ -360,7 +383,7 @@ export const Service = styled.section`
   background: url(${FlowerBg}) no-repeat center;
   background-size: cover;
   position: relative;
-  z-index: 1;
+  z-index: 100;
   margin-bottom: 151px;
 
   &:before {
@@ -470,18 +493,41 @@ export const Products = styled.section`
   width: 100%;
   position: relative;
   z-index: 1;
+
+  &:before {
+    content: "";
+    width: 1px;
+    height: 1250px;
+    background-color: ${color.blue};
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 10;
+    left: 55%;
+    top: -5%;
+  }
+
+  &:after {
+    content: "";
+    width: 1px;
+    height: 655px;
+    background-color: ${color.lightPurple};
+    opacity: 0.5;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 45%;
+  }
 `;
 
-export const ProductBlueLine = styled.div`
-  width: 1px;
-  height: 1000px;
-  background-color: ${color.blue};
-  position: absolute;
-  left: 60%;
-  top: -55%;
-  transform: rotate(45deg);
-  z-index: -50;
-`;
+// export const ProductBlueLine = styled.div`
+//   width: 1px;
+//   height: 1000px;
+//   background-color: ${color.blue};
+//   position: absolute;
+//   left: 60%;
+//   top: -55%;
+//   transform: rotate(45deg);
+//   z-index: -50;
+// `;
 
 export const ProductsBottom = styled.div`
   display: flex;

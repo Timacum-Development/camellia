@@ -8,21 +8,22 @@ export const FlowerCard = styled.div`
   width: 25%;
   transition: all 0.1s ease-in-out;
   position: relative;
+  z-index: 200;
+  background: linear-gradient(to bottom, transparent 30%, ${color.white} 70%);
 
   &:after {
     content: "";
     width: 100%;
-    height: 100%;
+    height: 90%;
     position: absolute;
     top: 70px;
     background-color: ${color.white};
+    box-shadow: 0 40px 50px -50px ${color.black};
     z-index: -1;
     display: none;
   }
 
   &:hover {
-    box-shadow: 0 40px 50px -50px ${color.black};
-
     &:after {
       display: block;
     }

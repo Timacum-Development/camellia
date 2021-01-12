@@ -10,4 +10,5 @@ export const color = {
   lightBlack: "#5E5E5E",
   grey: "#E2E2E2",
   lightPurple: "#9C3FAB",
+  lightPink: "#FFDDFF",
 };

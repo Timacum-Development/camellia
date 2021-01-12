@@ -42,7 +42,6 @@ import {
   Flower,
   SliderWrap,
   ProductsBottom,
-  ProductBlueLine,
   ServiceLineFirst,
   ServiceLineSecond,
 } from "./style";
@@ -184,7 +183,6 @@ const Homepage = () => {
             }}
           />
         </ProductsBg>
-
         <Flower className="container">
           <Card
             flowerUrl={Dahlia}
@@ -219,7 +217,6 @@ const Homepage = () => {
             styleFlower={{ marginBottom: "68px" }}
             buyBag={BlueBag}
           />
-          <ProductBlueLine />
         </Flower>
         <SliderWrap>
           <Slider horizontal />

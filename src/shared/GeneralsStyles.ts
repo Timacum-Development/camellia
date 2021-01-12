@@ -105,7 +105,7 @@ export default createGlobalStyle`
 	h4 {
 		font-size: 1.0625rem;
 		font-family: 'Roboto Slab', serif;
-		color: ${color.white};
+		color: ${color.lightPink};
 		margin-bottom: 44px;
 		text-transform: uppercase;
 		letter-spacing: 5px;
@@ -123,7 +123,7 @@ export default createGlobalStyle`
 	h6 {
 		font-size: 0.75rem;
 		font-family: 'Roboto Slab', serif;
-		color: ${color.white};
+		color: ${color.lightPink};
 		letter-spacing: 2px;
 	}
 
