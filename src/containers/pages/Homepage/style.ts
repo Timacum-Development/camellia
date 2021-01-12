@@ -276,6 +276,7 @@ export const WomanLine = styled.div`
   z-index: -1;
   position: absolute;
   left: 67%;
+  top: 5%;
 `;
 
 export const WomanLineSecond = styled.div`
