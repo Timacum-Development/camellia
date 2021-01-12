@@ -45,6 +45,19 @@ export const FooterInfo = styled.div`
   align-items: flex-end;
   position: relative;
 
+  &:before {
+    content: "";
+    width: 1px;
+    height: 750px;
+    background: linear-gradient(${color.purple} 10%, ${color.white} 90%);
+    position: absolute;
+    bottom: -220px;
+    left: -55px;
+    transform: rotate(45deg);
+    z-index: 10;
+    filter: drop-shadow(5px 0px 5px ${color.black});
+  }
+
   &:after {
     content: "";
     width: 740px;
@@ -83,28 +96,4 @@ export const LineTop = styled.div`
   top: 100px;
   clip-path: polygon(0% 0%, 100% 0%, 99% 100%, 0% 100%);
   z-index: 100;
-`;
-
-export const RotatedLine = styled.div`
-  width: 1px;
-  height: 500px;
-  background-color: ${color.white};
-  position: absolute;
-  left: 916px;
-  bottom: -71px;
-  transform: rotate(45deg);
-  z-index: 100;
-  filter: drop-shadow(5px 0px 5px ${color.black});
-  z-index: 1;
-`;
-
-export const RotatedSecond = styled.div`
-  width: 1px;
-  height: 152px;
-  background-color: ${color.purple};
-  position: absolute;
-  left: 62%;
-  top: -33%;
-  transform: rotate(45deg);
-  z-index: 50;
 `;

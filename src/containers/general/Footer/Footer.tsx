@@ -5,8 +5,6 @@ import {
   FooterNav,
   FooterLine,
   LineTop,
-  RotatedLine,
-  RotatedSecond,
 } from "./style";
 
 import Logo from "../../../shared/components/Logo";
@@ -45,8 +43,6 @@ const Footer = () => {
         </FooterNav>
       </FooterInfo>
       <FooterLine />
-      <RotatedLine />
-      <RotatedSecond />
     </FooterWrap>
   );
 };
