@@ -32,15 +32,16 @@ export const Hero = styled.section`
     top: 0;
     background: url(${HeroFlower}) no-repeat;
     /* background-size: cover; */
-    background-position: 100% 30%;
     background-attachment: fixed;
+    background-position: 100% 30%;
+
     opacity: 0.15;
     mix-blend-mode: overlay;
   }
 `;
 
 export const PurpleLine = styled.div`
-  width: 794px;
+  /* width: 794px; */
   height: 7px;
   background-color: ${color.purple};
   position: relative;
@@ -60,6 +61,17 @@ export const PurpleLine = styled.div`
 export const HeroIntro = styled.div`
   position: relative;
   top: -70px;
+
+  &:after {
+    content: "";
+    width: 1px;
+    height: 400px;
+    background-color: ${color.white};
+    position: absolute;
+    top: -80%;
+    right: -35%;
+    transform: rotate(45deg);
+  }
 `;
 
 export const CtaWrap = styled.div`
@@ -72,6 +84,18 @@ export const FlowerWrap = styled.div`
   left: 350px;
   bottom: 100px;
   width: 966px;
+
+  &:before {
+    content: "";
+    width: 1px;
+    height: 200px;
+    background-color: ${color.white};
+    filter: drop-shadow(5px 0px 5px ${color.black});
+    position: absolute;
+    top: 25%;
+    left: -30%;
+    transform: rotate(45deg);
+  }
 `;
 
 export const PinkFlower = styled.img`
@@ -361,7 +385,7 @@ export const ServiceLineFirst = styled.div`
   height: 175px;
   background-color: ${color.blue};
   position: absolute;
-  left: 70%;
+  left: 75%;
   z-index: 50;
   top: -100px;
   transform: rotate(45deg);
@@ -502,6 +526,7 @@ export const Flower = styled.div`
   position: relative;
   z-index: 100;
   top: -110px;
+  padding-bottom: 100px;
 `;
 
 export const SliderWrap = styled.div`
@@ -509,5 +534,5 @@ export const SliderWrap = styled.div`
   justify-content: center;
   width: 100%;
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
 `;

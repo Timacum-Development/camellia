@@ -97,3 +97,14 @@ export const RotatedLine = styled.div`
   filter: drop-shadow(0 15px 10px ${color.black});
   z-index: 1;
 `;
+
+export const RotatedSecond = styled.div`
+  width: 1px;
+  height: 152px;
+  background-color: ${color.purple};
+  position: absolute;
+  left: 62%;
+  top: -33%;
+  transform: rotate(45deg);
+  z-index: 50;
+`;

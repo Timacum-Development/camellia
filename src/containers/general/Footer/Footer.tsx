@@ -6,6 +6,7 @@ import {
   FooterLine,
   LineTop,
   RotatedLine,
+  RotatedSecond,
 } from "./style";
 
 import Logo from "../../../shared/components/Logo";
@@ -45,6 +46,7 @@ const Footer = () => {
       </FooterInfo>
       <FooterLine />
       <RotatedLine />
+      <RotatedSecond />
     </FooterWrap>
   );
 };
