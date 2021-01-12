@@ -13,17 +13,7 @@ import Woman3 from "../../../assets/woman3.png";
 import ProductBcg from "../../../assets/black-white.png";
 import HeroFlower from "../../../assets/flower-bg-hero.jpg";
 
-export const FlowerPink = keyframes`
-  0% {
-    transform: perspective(300px) translateZ(-600px);
-  }
-
-  100% {
-    transform: translateZ(0px);
-  }
-`;
-
-export const FlowerBlue = keyframes`
+export const HeroAnimation = keyframes`
   0% {
     transform: perspective(300px) translateZ(-600px);
   }
@@ -97,7 +87,7 @@ export const HeroIntro = styled.div`
 export const CtaWrap = styled.div`
   display: flex;
   align-items: center;
-  animation: ${FlowerPink} 1.2s ease-in-out forwards;
+  animation: ${HeroAnimation} 1.2s ease-in-out forwards;
 `;
 
 export const FlowerWrap = styled.div`
@@ -126,7 +116,7 @@ export const PinkFlower = styled.img`
   position: relative;
   /* top: 318px; */
   top: 234px;
-  animation: ${FlowerPink} 1.2s ease-in-out forwards;
+  animation: ${HeroAnimation} 1.2s ease-in-out forwards;
 `;
 
 export const BlueFlower = styled.img`
@@ -137,7 +127,7 @@ export const BlueFlower = styled.img`
   left: 80px;
   bottom: 100px;
   z-index: 1;
-  animation: ${FlowerBlue} 1.2s ease-in-out forwards;
+  animation: ${HeroAnimation} 1.2s ease-in-out forwards;
 `;
 
 export const SideWrap = styled.div`
@@ -150,8 +140,26 @@ export const SideWrap = styled.div`
   right: 65px;
 `;
 
+export const IconAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
+`;
+
 export const SideIcon = styled.img`
   display: block;
+
+  &:hover {
+    animation: ${IconAnimation} 0.5s ease-in-out forwards;
+  }
 `;
 
 export const FirstLine = styled.div`
@@ -238,7 +246,7 @@ export const TextWrap = styled.div`
 export const ImageWrap = styled.div`
   width: 50%;
   position: relative;
-  padding-top: 81px;
+  top: 100px;
   z-index: 100;
 `;
 
@@ -255,7 +263,7 @@ export const WomanSecond = styled.div`
   background: url(${Woman2}) no-repeat center;
   position: absolute;
   right: 150px;
-  bottom: -50px;
+  bottom: 25px;
   z-index: 50;
   filter: drop-shadow(0px 5px 15px ${color.black});
 `;
@@ -309,7 +317,7 @@ export const Welcome = styled.section`
 export const LineWrap = styled.div`
   display: flex;
   width: 100%;
-  max-width: 1642px;
+  max-width: 1710px;
   position: absolute;
   top: 0;
   right: 0;
@@ -317,7 +325,7 @@ export const LineWrap = styled.div`
 
 export const WelcomeLine = styled.div`
   width: 100%;
-  max-width: 1642px;
+  max-width: 1710px;
   height: 7px;
   background: linear-gradient(to right, ${color.purple} 60%, ${color.blue} 40%);
   position: relative;

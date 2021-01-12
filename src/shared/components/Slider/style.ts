@@ -21,6 +21,7 @@ export const WhiteSlider = styled.div`
   align-items: center;
   position: absolute;
   left: 57px;
+  cursor: pointer;
 `;
 
 export const WhiteArrowFirst = styled.div`
@@ -63,6 +64,7 @@ export const BlueSlider = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 `;
 
 export const BlueArrowFirst = styled.div`
@@ -116,6 +118,7 @@ export const PurpleSlider = styled.div`
   display: flex;
   align-items: center;
   padding: 55px 0 30px 101px;
+  cursor: pointer;
 `;
 
 export const WhiteDot = styled.div`

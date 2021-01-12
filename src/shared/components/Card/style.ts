@@ -6,7 +6,7 @@ export const FlowerCard = styled.div`
   flex-direction: column;
   align-items: center;
   width: 25%;
-  transition: all 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
   position: relative;
   z-index: 200;
   background: linear-gradient(to bottom, transparent 30%, ${color.white} 70%);
