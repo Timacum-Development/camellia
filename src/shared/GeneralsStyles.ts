@@ -136,7 +136,7 @@ export default createGlobalStyle`
 	}
 
 	.cta {
-		padding: 25px 51px;
+		padding: 16px 39px;
 		border-radius: 4rem;
   		text-align: center;
   		font-family: 'Roboto Slab', serif;

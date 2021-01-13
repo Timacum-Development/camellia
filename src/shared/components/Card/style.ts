@@ -20,12 +20,15 @@ export const FlowerCard = styled.div`
     background-color: ${color.white};
     box-shadow: 0 40px 50px -50px ${color.black};
     z-index: -1;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s ease-in-out;
   }
 
   &:hover {
     &:after {
-      display: block;
+      visibility: visible;
+      opacity: 1;
     }
   }
 `;
